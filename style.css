@@ -1,0 +1,365 @@
+*{
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+   
+
+}
+:root{
+  --color:white;
+  --greencolor:#54B689;
+}
+body{
+    padding-top: 40px;
+    padding-left: 330px;
+    padding-right: 40px;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 240px;
+    color: var(--color);
+    padding: 20px;
+    background:#54B689;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 150px;
+}
+.logo{
+    text-align: center;
+}
+.solo{
+    text-align: center;
+}
+.apps{
+    display: flex;
+    justify-content: space-around;
+}
+.apps a{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    background: white;
+}
+.apps a i{
+
+    color: var(--greencolor);
+}
+nav{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    width: 100%;
+}
+.solo h4{
+    font-size: 20px;
+}
+nav a{
+   
+    color: rgba(255, 255, 255, 0.888);
+    font-weight: bold;
+    margin: 10px 0px;
+   
+}
+nav a span{
+    margin-left: 6px;
+ 
+}
+
+.skip{
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.49);
+    margin: 20px 0px;
+}
+.about h1{
+    color: #292929;
+    margin: 0;
+    font-size: 50px;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about .image img{
+    width: 400px;
+}
+.text p{
+    margin-bottom: 40px;
+}
+.text a{
+   
+    text-align: center;
+    padding: 10px 20px;
+    background: var(--greencolor);
+    color: white;
+    border-radius: 5px;
+  
+   
+    font-weight: bold;
+    
+}
+a.dark{
+    background: #434343;
+}
+.text h2{
+    font-weight: 100;
+    margin: 0;
+}
+.text p{
+    line-height: 30px;
+    max-width: 600px;
+}
+.skipp{
+    width: 100%;
+    height: 0.1px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.193);
+}
+.skills h1{
+    color: #292929;
+    border-left: 5px solid var(--greencolor);
+    padding-left: 10px;
+}
+.col img{
+    width: 300px;
+}
+.skill{
+    display: flex;
+    
+   flex-wrap: wrap;
+   gap: 50px;
+}
+.col i{
+    font-size: 100px;
+}
+.text{
+    margin-bottom: 40px;
+}
+.skill .col p{
+    text-align: center;
+}
+.col {
+    text-align: left;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    color: var(--greencolor);
+}
+nav a:hover{
+    color: #398562;
+    
+}
+.greenhover{
+    color: #398562;
+}
+.project img{
+    width: 300px;
+
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project a{
+    color: #292929;
+    
+}
+.contact h1{
+    text-align: center;
+    color: #292929;
+    font-size: 50px;margin: 0;
+}
+.contact{
+    text-align: center;
+}
+
+.emails{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 70px;
+   justify-content: center;
+    
+}
+.column span{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 100px;
+    background: var(--greencolor);
+    border: none;
+}
+.column{
+    display: flex;
+    align-items: center;
+}
+.column ion-icon{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.data{
+    padding-left: 20px;
+}
+form{
+    grid-template-columns: auto ;
+    display: grid;
+    }
+
+    #delete.active{
+    display: block ;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.text2{
+    text-align: center;
+    margin: auto;
+
+}
+.projects{
+    margin-top: 30px;
+}
+#menu{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.form input{
+    border: .3px solid var(--greencolor);
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.form textarea{
+    border: .3px solid var(--greencolor);
+    outline: none;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+.wrapper{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form #btn{
+    background: var(--greencolor);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+
+}
+#preloader{
+    position: fixed;
+    background: white url(./images/loading.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    
+    z-index: 1999;
+
+}
+
+iframe{
+    box-shadow: 0 0 10px var(--greencolor);
+    width: 100%;
+    border: 1px solid black;
+}
+@media   (max-width:1200px) {
+    .image{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        text-align: left;
+    }
+    .about{
+        justify-content: start;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    body{
+        padding: 0px;
+    }
+    #menu{
+        display: block;
+    }
+    header{
+        position: relative;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .solo{
+        margin: 10px 0px;
+    }
+    #delete{
+        display: none;
+    }
+    .main{
+             padding: 30px;
+    }
+    .solo h4{
+        margin: 0;
+    }
+    
+}
+@media screen and (max-width:616.9px) {
+    .emails{
+    justify-content: start;
+    align-items: center;
+   
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .image img{
+        justify-content: center;
+        max-width: 100%;
+    }
+    .skill{
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:335px) {
+    .text h1{
+        font-size: 40px;
+    }
+    .text2 h1{
+        font-size: 40px;
+    }
+    .project img{
+        width: 100%;
+    }
+    .contact h1{
+        font-size: 40px;
+    }
+}
